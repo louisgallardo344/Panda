@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+
+carscsv  = {'Model': ['Mazda RX4', 'Mazda RX4 Wag', 'Datsun 710', 'Hornet 4 Drive', 'Hornet Sportabout', 'Lotus Europa', 'Ford Pantera L', 'Ferrari Dino', 'Maserati Bora', 'Volvo 142E'],
+        'mpg': [21, 21, 22.8, 21.4, 18.7, 30.4, 15.8, 19.7, 15, 21.4],
+        'cyl': [6,6,4,6,8,48,6,8,4]
+        'disp':[160, 160, 108 ,258,360, 95.1, 351, 145, 301, 121],
+        'hp': [110, 110, 93, 110, 175, 113, 264, 175, 335, 109],
+        'wt': [2.62, 2.875, 2.32, 3.215, 3.44, 1.513, 3.17, 2.77, 3.57, 2.78],
+        'qsec': [16.46, 17.02, 18.61, 19.44, 17.02, 16.9 ,14.5, 15.5, 14.6, 18.6],
+        'vs': [0, 0, 1, 1, 0, 1, 0, 0, 0, 1],
+        'am': [1, 1, 1, 0, 0, 1, 1, 1, ,1, 1],
+        'gear': [4, 4, 4, 3, 3, 5, 5, 5, 5, 4],
+        'carb': [4, 4, 1, 1, 2, 2, 4, 6, 8, 2],
+        
+        
+
+df = pd.DataFrame(carscsv)
+print("First five rows and last five rows of the data frame:")
